@@ -1,30 +1,111 @@
+* {
+	box-sizing: border-box;
+}
 body {
 	background-color: #e5e5e5;
-}
-.container {
-	padding-left: 60px;
-	padding-right: 60px;
-}
-nav	{
-	height: 60px;
-	background-color: grey;
-	position: fixed;
-	width: 100%;
+	margin: 0;
+	padding: 60px;
+	font-family: helvetica;
 }
 header {
-	height: 50px;
-	margin-top: 10px;
-	margin-bottom: 5px;
-	vertical-align: middle;
-	font-size: 30px;
-	display: inline-block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	background-color: grey;
+	border-bottom: 1px solid grey;
 }
-nav ul {
-	display: inline-block;
-	list-style: none;
+.top-bar {
+	position: absolute;
+	right: 10px;	
+	top: 10px;
 }
-nav li {
-	display: inline-block;
+.nav-link {
 	font-size: 20px;
-	color: purple;
+	padding: 10px;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.gl-list {
+	display: inline-block;
+	border-radius: 100%;
+	font-weight: 800;
+}
+.gl-list h1 {
+	font-weight: normal;	
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+.search-section {
+	margin-bottom: 30px;
+}
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+.search-section input {
+	font-family: helvetica;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 30px;
+	height: 30px;
+	border-radius: 3px;
+	border: 1px solid grey;
+	width: 400px;
+	padding: 0 5px 0 10px;
+}
+.search-section button {
+	font-size: 20px;
+	height: 30px;
+	background-color: white;
+	border: 1px solid grey;
+	border-radius: 3px;
+}
+.pages {
+	display: inline-block;
+	font-size: 0;
+	margin-bottom: 30px;
+	border: 1px solid grey;
+	border-radius: 3px;
+}
+.pages-button {
+	font-size: 16px;
+	display: inline-block;
+	padding: 8px 15px;
+	border-radius: 3px;
+}
+.pages-display {
+	font-size: 16px;
+	padding: 0 30px;
+	padding: 8px 15px;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+}
+.listings {
+	padding: 0;
+}
+.listing {
+	list-style: none;
+	margin-bottom: 15px;
+}
+.listing-date, .listing-location {
+	color: #999;
+}
+.listing-title {
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+.search-button {
+	vertical-align: bottom;
+}
+ .magnifying-icon {
+	height: 100%;
 }
